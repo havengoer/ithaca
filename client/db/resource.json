@@ -1,0 +1,158 @@
+[
+    {
+      "type": "Work",
+      "company_name": "Chrysalis",
+      "address": "516 South Main Street, Los Angeles",
+      "contact_number": "(213) 895-7777"
+    },
+    {
+      "type": "Work",
+      "company_name": "Chrysalis",
+      "address": "522 S. Main St., Los Angeles, CA 90013",
+      "contact_number": "(213) 806-6300"
+    },
+    {
+      "type": "Work",
+      "company_name": "Chrysalis",
+      "address": "1853 Lincoln Blvd., Santa Monica, CA 90404",
+      "contact_number": "(310) 401-9400"
+    },
+    {
+      "type": "Work",
+      "company_name": "Chrysalis",
+      "address": "13545 Van Nuys Blvd. #1, Pacoima, CA 91331",
+      "contact_number": "(818) 794-4200"
+    },
+    {
+      "type": "Food",
+      "company_name": "Bread and Roses",
+      "address": "663 Rose Ave, Venice",
+      "contact_number": "(310) 392-9147"
+    },
+    {
+      "type": "Food",
+      "company_name": "Hospitality (Hippie) Kitchen",
+      "address": "821 East 6th St., Los Angeles",
+      "contact_number": "(213) 614-9615"
+    },
+    {
+      "type": "Food",
+      "company_name": "St. Francis Center",
+      "address": "1835 S. Hope St., Los Angeles",
+      "contact_number": "(213) 747-5347"
+    },
+    {
+      "type": "Food",
+      "company_name": "Interfaith Food Center",
+      "address": "14545 Leffingwell, Whittier",
+      "contact_number": "(562) 903-1478"
+    },
+    {
+      "type": "Food",
+      "company_name": "West Valley Food Pantry",
+      "address": "5700 Rudnick, Woodland Hills,",
+      "contact_number": "(818) 346-5554"
+    },
+    {
+      "type": "Food",
+      "company_name": "La Voz Sylmar Valley Food Pantry",
+      "address": "13550 Herron, Sylmar",
+      "contact_number": "(818) 765-3350"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Angels Flight (Youth)",
+      "address": "",
+      "contact_number": "(800) 833-2499"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Long Beach Rescue Mission",
+      "address": "1335 Pacific Ave LB",
+      "contact_number": "(562) 591-1292"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Bell Shelter",
+      "address": "5600 Rickenbacker Road, Bell 90201",
+      "contact_number": "(323) 263-1206"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Los Angeles Mission",
+      "address": "303 E. 5th Street Los Angeles",
+      "contact_number": "(213) 629-1227"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Cardinal Manning Ctr.",
+      "address": "231 Winston St. Los Angeles",
+      "contact_number": "(213) 229-9963"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Midnight Mission",
+      "address": "601 S. San Pedro St. Los Angeles",
+      "contact_number": "(213) 624-9258"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Dolores Mission",
+      "address": "171 S. Gless Street Los Angeles",
+      "contact_number": "(323) 881-0032"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "San Fernando Rescue Mission",
+      "address": "13422 Saticoy, N. Hollywood,",
+      "contact_number": "(818)785-4476"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Jovenes, Inc.",
+      "address": "1208 Pleasant Ave. Los Angeles",
+      "contact_number": "(323) 260-8035"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Samoshel",
+      "address": "505 Olympic, Santa Monica",
+      "contact_number": "(310) 450-4050 or(310) 581-9825"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Filipino American Svcs. Group",
+      "address": "135 N. Park View St., LA",
+      "contact_number": "(213) 487-9804"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Shawl House",
+      "address": "936 S. Centre St., San Pedro",
+      "contact_number": "(310) 521-9310"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "YR Shelter Program",
+      "address": "3804 Broadway Pl. Los Angeles",
+      "contact_number": "(323) 231-1711"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Union Rescue Mission",
+      "address": "545 S. San Pedro St. Los Angeles",
+      "contact_number": "(213) 347-6300"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Lancaster Community Homeless Shelter",
+      "address": "44611 Yucca Ave.",
+      "contact_number": "(661) 945-7524"
+    },
+    {
+      "type": "Shelter",
+      "company_name": "Union Station",
+      "address": "412 S. Raymond Ave, Pasadena",
+      "contact_number": "(626) 240-4550"
+    }
+   ]
