@@ -6,7 +6,7 @@ body {
     align-items: center;
   }
 .slate_container {
-  border: 1px solid black;
+
   display: block;
         flex-direction: column;
         justify-content: center;
@@ -17,13 +17,75 @@ address {
   padding-left: 10px;
 }
 
-div .contact_icon {
+.contact_icon {
   display: inline-block;
   flex-direction: column;
         justify-content: center;
         align-items: center;
 }
 .contact_icon{
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+}
+
+nav {
+  display: inline-block;
+}
+
+.nav_block {
+  display: block;
+}
+
+.nav_button {
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 3px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.nav_button:hover {
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+}
+.nav_button_active {
+  display: inline-block;
+  border: 1px black solid;
+  border-radius: 3px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+}
+hr {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+hr:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+.box {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.company_name {
+  font-size: 1.5em
 }

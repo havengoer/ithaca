@@ -11,19 +11,23 @@ const Contacts = (props) =>{
   }else if (props.type === 'Work'){
     img = "./images/jobs.jpg";
   }
+  const googleAddress = 'https://www.google.com/maps/place/' + props.address;
   return (
     
-  <div> 
+  <div className='box'> 
 
-      <div className='contact_icon'>
-      <img src={img} className='contact_icon' /><br /><br />
-      </div>
       <address>
-  <h3>{props.company_name}</h3>
+      <p className='company_name'><img src={img} className='contact_icon' />
+      &#160;&#160;{props.company_name}</p> 
   <p>Address: {props.address}<br />
-  Contact Number: <a href="tel:{props.contact_number}">{props.contact_number}</a></p>
+  Contact Number: <a href="tel:{props.contact_number}">{props.contact_number}</a> 
+    </p>
+    <form action={googleAddress}>
+      <input type="submit" value="Get Directions" />
+    </form>
     </address>
-    <hr />
+   
+    
 
   </div>
   )}
@@ -31,9 +35,3 @@ const Contacts = (props) =>{
 
 export default Contacts;
 
-// James Rockford<br/>
-//       2354 Pacific Coast Highway<br/>
-//       California<br/>
-//       USA<br/>
-//       +311-555-2368<br/>
-//       Email: <a href="mailto:j.rockford@example.com">j.rockford@example.com</a><br/>
