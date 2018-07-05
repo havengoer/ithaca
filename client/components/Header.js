@@ -4,7 +4,13 @@ class Header extends Component {
   render() {
     return (
         <header>
-        <h1>Ithaca</h1>
+          <img src="./images/ithaca_logo.jpg" />
+          <nav>
+            <div >All</div>
+            <div>Shelter</div>
+            <div>Food Banks</div>
+            <div>Jobs</div>
+          </nav>
         </header>
     )
   }

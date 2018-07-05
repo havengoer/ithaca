@@ -2,19 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Contacts = (props) =>{
-  console.log(props)
+  console.log(props.type)
+  let img;
+  if (props.type === 'Shelter'){
+    img = "./images/shelter.jpg";
+  } else if (props.type === 'Food') {
+    img = "./images/food.jpg";
+  }else if (props.type === 'Work'){
+    img = "./images/jobs.jpg";
+  }
   return (
+    
   <div> 
 
-    <address>
+      <div className='contact_icon'>
+      <img src={img} className='contact_icon' /><br /><br />
+      </div>
+      <address>
   <h3>{props.company_name}</h3>
   <p>Address: {props.address}<br />
   Contact Number: <a href="tel:{props.contact_number}">{props.contact_number}</a></p>
-    {props.type}
-      <hr />
-         
-      
     </address>
+    <hr />
+
   </div>
   )}
 ;

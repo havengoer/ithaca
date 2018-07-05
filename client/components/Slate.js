@@ -1,21 +1,8 @@
 import React, { Component } from 'react';
 import Contacts from './Contacts';
-// import resources from './db/resources.json';
 
-// Feed contains multiple FeedItems
-// Put AJAX in this Component
-console.log("inside slate")
 let resourcesStore = [];
 let resourcesArrayComponent = [];
-
-// function fetchResources() {
-//   return fetch('http://localhost:8080/resources')
-//     .then(response => response.json())
-//     .catch(err => {
-//       console.log('error')
-//       if(err) console.error(err);
-//   })
-// }
 
 class Slate extends Component {
   constructor(props, context) {
@@ -49,12 +36,12 @@ class Slate extends Component {
     console.log(resourcesArrayComponent[0])
     if (resourcesArrayComponent[0] === undefined) {
       return (
-        <main style={styles.container}>
+        <main className='slate_container'>
           <h2>Loading...</h2>
         </main>
       );    } else {
       return (
-        <main style={styles.container}>
+        <main className='slate_container'>
           {resourcesArrayComponent}
         </main>
       );    }

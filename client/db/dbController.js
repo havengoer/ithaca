@@ -7,7 +7,6 @@ const dbController = {
         // use mongo find method and return to the client
         Resource.find()
         .then (result => {
-            console.log(result, "AT DBCONTROLLER")
             return res.json(result);
         })
         .catch(err => {
