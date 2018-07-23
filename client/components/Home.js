@@ -15,8 +15,8 @@ class Home extends Component {
       selectedFilter: 'all', 
       buttons: [{id:'all', name: 'All', activeState: 'active', order: 0},
                 {id:'shelter', name: 'Shelter', activeState: 'nope', order: 1},
-                {id:'jobs', name: 'Jobs', activeState: 'nope', order: 2},
-                {id:'food', name: 'Food',  activeState: 'nope', order: 3},
+                {id:'work', name: 'Job Resources', activeState: 'nope', order: 2},
+                {id:'food', name: 'Food Bank',  activeState: 'nope', order: 3},
               ]// values will be 'all', 'shelter', 'food', 'jobs'
     };
   }
@@ -24,8 +24,7 @@ class Home extends Component {
   handleClick(id, order) {
     // console.log('handleclick from HOOOME, HOMIE', id, order, this.state)
     let newButtonState = JSON.parse(JSON.stringify(this.state.buttons))
-    console.log(newButtonState, "BUTTON STATE")
-    console.log(newButtonState[order], "BEFORE")  
+ 
     newButtonState.forEach((e, i) => {
       if (i === order){
         newButtonState[i].activeState = 'active';
@@ -40,21 +39,20 @@ class Home extends Component {
       this.state,
       newObj,
       newSelectedFilter,
+      
     ))
 
-    console.log('official state now', this.state.buttons[order])
+    console.log( 'rrrrrr state now', this.state.selectedFilter)
     console.log(this.state)
   }
   componentDidMount() {
     fetch('http://localhost:8080/resources')
     .then(response => response.json())
-    .then(resourcesList => {
-        resourcesArrayComponent = resourcesList.map((e) => (
-        <Contacts type={e.type} company_name={e.company_name} address={e.address} contact_number={e.contact_number} key={e._id}/>));
-        resourcesStore = resourcesList;
+    .then(result => {
+       
         this.setState(Object.assign(
           this.state,
-          { resourcesList: resourcesStore },
+          { resourcesList: result },
           { filtered: resourcesStore } 
         ));
       })
@@ -62,6 +60,27 @@ class Home extends Component {
   }
 
   render() {
+    console.log(this.state.resourcesList, "RENDERED")
+
+    resourcesArrayComponent = this.state.resourcesList.reduce((acc, e) => {
+      console.log('hereeeeeeeeeeeeeee');
+      console.log(acc);
+        if (this.state.selectedFilter === 'all'){
+          acc.push (
+            <Contacts type={e.type} company_name={e.company_name} address={e.address} contact_number={e.contact_number} key={e._id}/>
+          )
+         } else {
+          console.log(this.state.selectedFilter.toLowerCase(), e.type.toLowerCase(), "~~~~~~~")
+          if (this.state.selectedFilter.toLowerCase() === e.type.toLowerCase()) {
+            acc.push (
+              <Contacts type={e.type} company_name={e.company_name} address={e.address} contact_number={e.contact_number} key={e._id}/>
+            )
+          }
+         }
+      return acc;
+    }, [])
+
+    console.log("***", resourcesArrayComponent[0])
 
 
     if (resourcesArrayComponent[0] === undefined) {
@@ -72,13 +91,13 @@ class Home extends Component {
           <h2>Loading...</h2>
         </main></div>
       );    } else {
+
+
       return (
         <div><Header buttons={this.state.buttons}  handleClick={this.handleClick}/>
         <main className='slate_container'>
         {resourcesArrayComponent}
         </main></div>
-
-
 
       );    }
     // put render logic here
